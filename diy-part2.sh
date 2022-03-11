@@ -18,11 +18,12 @@ git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app
 #passwall-package 
 #git clone -b packages  https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
 #git clone -b main  https://github.com/starambler/openwrt-passwall.git  package/passwall
-git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
+git clone -b main  https://github.com/xiaorouji/openwrt-passwall2.git  package/passwall
 
-for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt" "redsocks2"; do \
-  svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "package/helloworld/$i"; \
-done
+#git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
+#for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt" "redsocks2"; do \
+ # svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "package/helloworld/$i"; \
+#done
 
 #add upx
 mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
