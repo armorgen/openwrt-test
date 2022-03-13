@@ -13,7 +13,6 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 
 #custom your packages
 git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
-#svn co --force https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome && svn revert -R package/luci-app-adguardhome
 
 #passwall-package 
 git clone   https://github.com/starambler/openwrt-passwall.git  package/passwall
@@ -24,9 +23,7 @@ git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
 #for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt" "redsocks2"; do \
  # svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "package/helloworld/$i"; \
 #done
-
 svn checkout https://github.com/immortalwrt/packages/trunk/net/redsocks2    package/helloworld/redsocks2
-
 
 #add upx
 mkdir -p tools/ucl && wget -P tools/ucl https://raw.githubusercontent.com/coolsnowwolf/lede/master/tools/ucl/Makefile 
