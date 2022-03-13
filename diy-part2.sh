@@ -20,7 +20,7 @@ git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app
 git clone  https://github.com/xiaorouji/openwrt-passwall2.git  package/passwall2
 git clone  https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
 
-#git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
+git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
 #for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt" "redsocks2"; do \
  # svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "package/helloworld/$i"; \
 #done
