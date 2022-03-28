@@ -16,13 +16,14 @@ git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app
 
 #passwall package 
 git clone   https://github.com/starambler/luci-app-passwall  package/luci-app-passwall
+git clone   https://github.com/xiaorouji/openwrt-passwall  package/passwall
 #git clone  https://github.com/xiaorouji/openwrt-passwall2.git  package/passwall2
 
 #helloworld package
 git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
-for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt"  "redsocks2"; do \
-  svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "package/helloworld/$i"; \
-done
+#for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt"  "redsocks2"; do \
+#  svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "package/helloworld/$i"; \
+#done
 #svn checkout https://github.com/immortalwrt/packages/trunk/net/redsocks2    package/helloworld/redsocks2
 
 #add upx
