@@ -15,9 +15,9 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 
 #passwall package 
-#git clone  https://github.com/armorgen/luci-app-passwall  package/luci-app-passwall
-git clone  https://github.com/xiaorouji/openwrt-passwall  package/passwall
-git clone -b luci  https://github.com/xiaorouji/openwrt-passwall  package/luci-app-passwall
+git clone  https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
+git clone -b luci  https://github.com/xiaorouji/openwrt-passwall.git  package/luci-app-passwall
+git clone  https://github.com/xiaorouji/openwrt-passwall2.git   package/luci-app-passwall2
 
 #helloworld package
 git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
