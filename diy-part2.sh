@@ -26,6 +26,10 @@ git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
 #done
 svn checkout https://github.com/immortalwrt/packages/trunk/net/redsocks2    package/helloworld/redsocks2
 
+#CDN speedtest
+git clone https://github.com/mingxiaoyu/luci-app-cloudflarespeedtest.git package/luci-app-cloudflarespeedtest
+git clone https://github.com/immortalwrt-collections/openwrt-cdnspeedtest.git package/cdnspeedtest
+
 #update golang
 pushd feeds/packages/lang
 rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
