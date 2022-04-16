@@ -17,7 +17,7 @@ git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app
 #passwall package 
 git clone  https://github.com/xiaorouji/openwrt-passwall.git  package/passwall
 git clone -b luci  https://github.com/xiaorouji/openwrt-passwall.git  package/luci-app-passwall
-git clone  https://github.com/xiaorouji/openwrt-passwall2.git   package/luci-app-passwall2
+#git clone  https://github.com/xiaorouji/openwrt-passwall2.git   package/luci-app-passwall2
 
 #helloworld package
 git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
