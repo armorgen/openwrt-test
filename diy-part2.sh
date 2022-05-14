@@ -26,6 +26,8 @@ git clone -b master  https://github.com/fw876/helloworld.git  package/helloworld
 #done
 svn checkout https://github.com/immortalwrt/packages/trunk/net/redsocks2    package/helloworld/redsocks2
 
+svn checkout https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/luci-app-netdata
+
 #CDN speedtest package
 git clone https://github.com/mingxiaoyu/luci-app-cloudflarespeedtest.git package/luci-app-cloudflarespeedtest
 git clone https://github.com/immortalwrt-collections/openwrt-cdnspeedtest.git package/cdnspeedtest
